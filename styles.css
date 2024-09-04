@@ -1,0 +1,75 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #3e8e41;
+    color: white;
+    padding: 50px 0;
+}
+
+.jumbotron {
+    background-color: #3e8e41;
+    color: white;
+    margin-bottom: 0;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 0;
+}
+
+/* Plant Card Styling */
+.plant {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.plant img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.plant-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+}
+
+.plant:hover .plant-info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
